@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "BDD test suite for PAAMS — three-layer architecture: Langfuse prompt templates → BDD feature files → Apache AGE reuse index",
   "scripts": {
-    "lint": "echo ok"
+    "lint": "echo ok",
+    "test:e2e": "playwright test"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
 }
