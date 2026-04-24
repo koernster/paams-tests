@@ -1,0 +1,9 @@
+{
+  "name": "paams-tests",
+  "version": "0.1.0",
+  "description": "BDD test suite for PAAMS — three-layer architecture: Langfuse prompt templates → BDD feature files → Apache AGE reuse index",
+  "scripts": {
+    "lint": "echo ok"
+  },
+  "license": "MIT"
+}
