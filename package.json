@@ -4,10 +4,15 @@
   "description": "BDD test suite for PAAMS — three-layer architecture: Langfuse prompt templates → BDD feature files → Apache AGE reuse index",
   "scripts": {
     "lint": "echo ok",
+    "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require step_definitions/**/*.steps.ts",
+    "test:mtcm-private-debt": "cucumber-js features/mtcm-private-debt.feature --require-module ts-node/register --require step_definitions/mtcm-private-debt.steps.ts",
     "test:e2e": "playwright test"
   },
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.59.1"
+    "@cucumber/cucumber": "^11.0.0",
+    "@playwright/test": "^1.59.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
   }
 }
